@@ -32,7 +32,7 @@ target                测试编译文件二进制码
     **定义 spring 版本** 
 
 
- ```
+ ```xml
     <properties>
              <spring.version>3.2.3.RELEASE</spring.version>
     </properties>
@@ -43,7 +43,7 @@ target                测试编译文件二进制码
 **导入 jar 包 **
 
 
-```
+```xml
         <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.core</artifactId>
@@ -116,7 +116,7 @@ target                测试编译文件二进制码
 >>b. web.xml 配置文件
 
 
-```
+```xml
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee"
@@ -154,7 +154,7 @@ target                测试编译文件二进制码
 >>c. spring 配置文件
 
 
-```
+```xml
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
@@ -286,7 +286,7 @@ target                测试编译文件二进制码
 
 >> 引入jar包
 
-```
+```xml
         <dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
@@ -317,7 +317,7 @@ target                测试编译文件二进制码
 
 **配置文件**
 
-```
+```xml
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC
