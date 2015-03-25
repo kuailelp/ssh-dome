@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 指定Web应用的默认编码集,相当于调用HttpServletRequest的setCharacterEncoding方法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- spring 托管 指定Struts的工厂类 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<package name="default" extends="struts-default" namespace="/">
+		<!-- 声明拦截器 -->
+		<interceptors>
+			<!-- 权限拦截器 -->
+			<!-- <interceptor name="authority" -->
+			<!-- class="us.xuhang.project.interceptor.AuthorityInterceptor" /> -->
+			<!-- 声明拦截器栈！解决struts安全漏洞，拦截所有的带有#号的url -->
+			<interceptor-stack name="MyStack">
+				<interceptor-ref name="params">
+					<param name="excludeParams">.*\\u0023.*</param>
+				</interceptor-ref>
+				<!-- 使用自定义拦截器后就不会再使用默认拦截器栈，这里需要把默认拦截器栈加进来。 -->
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="MyStack" />
+		<!-- 定义全局的result -->
+		<global-results>
+			<result name="login">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</global-results>
+	</package>
+	<!-- <include file="struts-action.xml"></include> -->
+</struts>
