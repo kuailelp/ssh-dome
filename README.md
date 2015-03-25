@@ -30,13 +30,21 @@ target                测试编译文件二进制码
  >1. 搭建spring 环境 <br />
     >a. 引入 jar 包 <br/>
     **定义 spring 版本** 
-    ```xml
+
+
+ ```
     <properties>
-        <spring.version>3.2.3.RELEASE</spring.version>
+             <spring.version>3.2.3.RELEASE</spring.version>
     </properties>
-    ```
-    **导入 jar 包 **
-    ```<dependency>
+
+```
+
+
+**导入 jar 包 **
+
+
+```
+        <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.core</artifactId>
 			<version>${spring.version}</version>
@@ -101,9 +109,12 @@ target                测试编译文件二进制码
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+
+
     ```
 
-     >>b. web.xml 配置文件 <br/>
+>>b. web.xml 配置文件
+
 
    ```
 
