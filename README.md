@@ -111,12 +111,12 @@ target                测试编译文件二进制码
 		</dependency>
 
 
-    ```
+```
 
 >>b. web.xml 配置文件
 
 
-   ```
+```
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee"
@@ -151,7 +151,8 @@ target                测试编译文件二进制码
 </web-app>
 ```
 
->c. spring 配置文件
+>>c. spring 配置文件
+
 
 ```
 
