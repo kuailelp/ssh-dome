@@ -491,5 +491,9 @@ hibernate.current_session_context_class=org.springframework.orm.hibernate3.Sprin
 
 ```
  
+##相关链接
 
-    
+>1.[Struts2 配置项](http://my.oschina.net/5365437/blog/145589) <br/>
+>2.[Hibernate 相关问题](http://blog.csdn.net/haifengyouxi/article/details/17374627)<br/>
+>3.[Eclipse Git 相关问题](http://blog.csdn.net/pandakong/article/details/7234974)<br/>
+>4.[maven 相关问题](http://www.yiibai.com/maven/maven_eclispe_ide.html)
